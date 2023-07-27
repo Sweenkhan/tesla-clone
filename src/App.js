@@ -1,25 +1,63 @@
-import logo from './logo.svg';
-import './App.css';
+  import React from 'react';
+  import Header from './tesla/Header';
+  import Content from './tesla/Content';
+  import Footer from './tesla/Footer';
+  import './index.css'
 
-function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
-}
 
-export default App;
+
+  function App() {
+    return (
+
+      <>
+
+      <Header />
+
+      <Content carImg = "model-3.jpg"
+      title = "Model S"
+      discription = "Schedule a Demo Drive"
+      leftBtn = "Custom Order"
+      rightBtn = "View Inventory" />
+
+      <Content carImg = "model-s.jpg"
+      title = "Model 3"
+      discription = "Schedule a Demo Drive"
+      leftBtn = "Custom Order"
+      rightBtn = "View Inventory" />
+
+      <Content carImg = "model-x.jpg"
+      title = "Model X"
+      discription = "Schedule a Demo Drive"
+      leftBtn = "Custom Order"
+      rightBtn = "View Inventory" />
+
+      <Content carImg = "model-y.jpg"
+      title = "Model Y"
+      discription = "Schedule a Demo Drive"
+      leftBtn = "Custom Order"
+      rightBtn = "View Inventory" />
+
+      <Content carImg = "solar-panel.jpg"
+      title = "Solar Panels"
+      discription = "Lowest Cost Solar Panels in America "
+      leftBtn = "Custom Order"
+      rightBtn = "View Inventory" />
+
+      <Content carImg = "solar-roof.jpg"
+      title = "Solar Roof"
+      discription = "Produce Clear Energy From Your Roof"
+      leftBtn = "Custom Order"
+      rightBtn = "View Inventory" />
+
+      <Content carImg = "accessories.jpg"
+      title = "Accessories"
+      leftBtn = "Shop Now" />
+
+      <Footer />
+
+      </>
+
+    )
+  }
+
+  export default App;
